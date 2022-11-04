@@ -1,0 +1,116 @@
+:root {
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --primary-color: #272142;
+
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font-family);
+}
+p {
+  font-family: var(--default-font-family);
+  color: var(--primary-color);
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  padding-left: 5px;
+  transition: all 100ms ease-in-out;
+  color: var(--primary-color);
+}
+nav a:hover {
+  color: var(--branding-color);
+}
+nav .active a {
+  color: var(--branding-color);
+}
+
+.show-project {
+  background-color: var(--show-projects-color);
+}
+.show-project h2 {
+  font-size: 64px;
+}
+.show-project p {
+  font-size: 16px;
+}
+.show-project .btn {
+  color: var(--branding-color);
+  font-size: 16px;
+  font-family: var(--default-font-family);
+  border-radius: 4px;
+  padding: 15px 30px;
+  margin: 0px 10px;
+  border: 1px solid var(--branding-color);
+  box-shadow: 5px 10px 20px var(--secondary-color);
+}
+.work-inquiry {
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+}
+.work-inquiry p {
+  font-size: 18px;
+}
+.work-inquiry .btn {
+  background-color: var(--branding-color);
+  font-family: var(--default-font-family);
+  border-radius: 4px;
+  padding: 18px 30px;
+}
+.content-container {
+  padding: 40px 35px;
+}
+.content-container h1 {
+  font-size: 50px;
+  line-height: 80px;
+}
+.content-container h2 {
+  font-size: 18px;
+}
+
+.content-container p {
+  font-size: 16px;
+}
+.content {
+  margin: 20px;
+}
+
+.content-container .btn {
+  background-color: var(--branding-color);
+  font-family: var(--default-font-family);
+  border-radius: 4px;
+  padding: 18px 30px;
+}
+.content-container img {
+  border: 1px solid var(--secondary-color);
+  border-radius: 20px;
+}
+
+@media (max-width: 992px) {
+  .hero h1,
+  .content-container h1,
+  h1 {
+    font-size: 44px;
+    line-height: 1.5;
+  }
+  .show-project {
+    text-align: center;
+  }
+  .show-project .btn {
+    padding: 15px 130px;
+    border-radius: 8px;
+  }
+}
